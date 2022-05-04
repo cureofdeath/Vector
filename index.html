@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Vertex</title>
+    <title>Tech-Saplings | Vertex</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
@@ -25,13 +25,14 @@
       <a-assets>
         <a-asset-item
           id="bowser"
-          src="tree.glb"
+          src="./orbitals.glb"
         >
         </a-asset-item>
       </a-assets>
 
       <a-marker
-        preset="hiro"
+        type='pattern' 
+        url='./vertex.patt'
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
@@ -40,8 +41,9 @@
         <a-entity
           id="bowser-model"
           gltf-model="#bowser"
+          rotation="0 90 0"
           position="0 0 0"
-          scale="0.5 0.5 0.5"
+          scale="0.1 0.1 0.1"
           class="clickable"
           gesture-handler
         >
