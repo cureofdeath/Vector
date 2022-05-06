@@ -6,50 +6,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
-
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <script src="gesture-detector.js"></script>
-    <script src="gesture-handler.js"></script>
   </head>
 
   <body>
-    <a-scene
-      arjs
-      embedded
-      renderer="logarithmicDepthBuffer: true;"
-      vr-mode-ui="enabled: false"
-      gesture-detector
-      id="scene"
-    >
-      <a-assets>
-        <a-asset-item
-          id="bowser"
-          src="./orbitals.glb"
-        >
-        </a-asset-item>
-      </a-assets>
+    
+    <div class="box">
+      <div class="container">
+        <main class="grid">
+                          
+          <article>
+            <div class="text">
+              <h3>🧠 Human Brain </h3>
+              <p>The brain is one of the largest and most complex organs in the human body. It is made up of more than 100 billion nerves that communicate in trillions of connections called synapses. The brain is made up of many specialized areas that work together.</p>
+              <a href="./human-brain.html" class="btn">Let's AR</a>
+            </div>
+          </article>
 
-      <a-marker
-        type='pattern' 
-        url='./vertex.patt'
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="markerA"
-      >
-        <a-entity
-          id="bowser-model"
-          gltf-model="#bowser"
-          rotation="0 90 0"
-          position="0 0 0"
-          scale="0.1 0.1 0.1"
-          class="clickable"
-          gesture-handler
-        >
-        </a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
+          <article>
+            <div class="text">
+              <h3> Orbital-d</h3>
+              <p>When angular quantum number l=2, it is considered the d-orbital. For the d-orbital, the magnetic quantum number ml can equal -2 to 2, taking the possible values -2, -1, 0, 1, or 2. This gives rise to five d orbitals. </p>
+              <a href="./orbital-d.html" class="btn">Let's AR</a>
+            </div>
+          </article>
+          
+          <article>
+            <div class="text">
+              <h3>🌳 Banana Plant</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <a href="./plant.html" class="btn">Let's AR</a>
+            </div>
+          </article>
+
+          <article>
+            <div class="text">
+              <h3>🚗 Car Droid</h3>
+              <p>Car Droid is an implication model of a robot and car combination. </p>
+              <a href="./dron.html" class="btn">Let's AR</a>
+            </div>
+          </article>
+
+          
+      
+        </main>
+      </div>
+      </div>
+
   </body>
 </html>
