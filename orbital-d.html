@@ -11,9 +11,25 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="gesture-detector.js"></script>
     <script src="gesture-handler.js"></script>
+    <script>  
+		  /* Get into full screen */
+      function launchFullScreen(element) {
+        if(element.requestFullScreen) {
+          element.requestFullScreen();
+        } else if(element.mozRequestFullScreen) {
+          element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullScreen) {
+          element.webkitRequestFullScreen();
+        }
+      }
+      function loaded(){
+        launchFullScreen(document.documentElement);
+      }
+    </script>
   </head>
 
   <body>
+    <button onclick="launchFullScreen(document.documentElement)">Full screen</button>
     <a-scene
       arjs
       embedded
@@ -43,7 +59,7 @@
           gltf-model="#bowser"
           rotation="0 90 0"
           position="0 0 0"
-          scale="0.2 0.2 0.2"
+          scale="0.1 0.1 0.1"
           class="clickable"
           gesture-handler
         >

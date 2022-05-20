@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Tech-Saplings | Vertex</title>
+    <title>Tech-Saplings | Vertex </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="obj.css">
@@ -11,7 +11,7 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="gesture-detector.js"></script>
     <script src="gesture-handler.js"></script>
-    
+
     <script>  
 		  /* Get into full screen */
       function launchFullScreen(element) {
@@ -27,10 +27,11 @@
         launchFullScreen(document.documentElement);
       }
     </script>
-
+    
   </head>
 
   <body>
+
     <button onclick="launchFullScreen(document.documentElement)">Full screen</button>
     <a-scene
       arjs
@@ -43,7 +44,7 @@
       <a-assets>
         <a-asset-item
           id="bowser"
-          src="./src/tree.glb"
+          src="./src/orbital_dz2.glb"
         >
         </a-asset-item>
       </a-assets>
@@ -61,7 +62,7 @@
           gltf-model="#bowser"
           rotation="0 90 0"
           position="0 0 0"
-          scale="0.4 0.4 0.4"
+          scale="0.1 0.1 0.1"
           class="clickable"
           gesture-handler
         >
