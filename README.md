@@ -1,3 +1,3 @@
 # Vector
 
-Live on techsaplings.co
+🟢 Live on  [https://techsaplings.co](https://techsaplings.co/)
