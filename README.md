@@ -1,3 +1,3 @@
 # Vector
 
-🟢 Live on  [https://techsaplings.co](https://techsaplings.co/)
+🟢 Live on  [https://cureofdeath.design/vertex/](https://cureofdeath.design/vertex/)
